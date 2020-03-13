@@ -40,7 +40,7 @@ Time complexity; Worst case: O(n^2)
             Best case: O(n^2)
 Data structure: Array
                                             
-                                            3. Insertion Sort
+                                                   3. Insertion Sort
                                                     
                                                     
 Is stable an in-place comparison sorting algorithm, which sorts an array by first dividing it into 2 seperate ‘sub-arrays’, where the first value of the array(since it doesn’t have items to its left), is considered sorted. We index up the array and compare the [n-1] and [n] indexed values and swap them if needed, if not proceed until the entire array is sorted.
@@ -104,7 +104,7 @@ Time complexity; Worst case: O(n+k)
             Average case: O(n+k)
 Data structure: Array List
 
-                                                 9. Bucket sort
+                                                  9. Bucket sort
                                                  
                                                  
 Is a comparison-sort based algorithm that sorts the elements into several groups called buckets. The elements inside each bucket are sorted using any of the other suitable sorting algorithms (mainly insertion sort, but it really depends on the average size of the buckets) recursively. Bucket sort is mainly used when input is uniformly distributed over a range.
@@ -113,7 +113,7 @@ Time complexity; Worst case: O(n^2)
             Average case: O(n + (n^2/k) + k ) , O(n) when k ≈ n
 Data structure: Array List
 
-                                              10. Shell Sort
+                                                 10. Shell Sort
                                               
                                               
 Is an in-place comparison sort, which first sorts the elements far apart from each other and successively reduces the interval between the elements to be sorted. It is a generalised version of the insert sort algorithm
