@@ -85,24 +85,25 @@ Remove the largest item(Root node).
 Place the item in a sorted partition array.
 **This is done recursively of course**
 
-                                                    7. Radix Sort
+                                                    7. Counting Sort
+                                                    
+Is a stable algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The counts are stored in an auxiliary array and the sorting is done by mapping the counts as an index of the auxiliary array.
+Space complexity: O(n+k), where k is the
+Time complexity; Worst case: O(n+k)
+            Average case: O(n+k)
+Data structure: Array List                                                    
                                                     
                                                     
+                                                   8. Radix Sort sort
+                                                   
+                                                   
 Is an algorithm that sorts the elements by first grouping the individual digits of same place value **into a linked list**. It then sorts the elements according to their increasing or decreasing order. It is only used to sort numbers.
 Space complexity: O(n+2)^2
 Time complexity; Worst case: O(n * k/d)
             Average case: O(n * k/d)
             Best case : O(k(n+d))
 Data structure: Array
-
-                                                   8. Counting sort
-                                                   
-                                                   
-Is a stable algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The counts are stored in an auxiliary array and the sorting is done by mapping the counts as an index of the auxiliary array.
-Space complexity: O(n+k), where k is the
-Time complexity; Worst case: O(n+k)
-            Average case: O(n+k)
-Data structure: Array List
+ 
 
                                                   9. Bucket sort
                                                  
