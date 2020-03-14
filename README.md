@@ -21,8 +21,8 @@ Time complexity: It’s the amount of time it takes to run the algorithm.
 
 The bubble sort is a comparison-sort algorithm, which sorts items in an array by repeatedly stepping through the array, comparing adjacent elements and swaps them if they are in the incorrect order. The steps through the array are repeated until the array is sorted.
 
-Space complexity: O(1)
 
+Space complexity: O(1)
 Time complexity; Worst case: O (n^2)
             Average case: O(n^2)
             Best case: O(n)
@@ -34,6 +34,8 @@ Data structure: Array
 Is an in-place comparison sorting algorithm,which sorts a given array by repeatedly finding the minimum element from the unsorted part and putting it at the beginning. The algorithm maintains two sub-arrays at a given time.
 The sub-array which is already sorted(Initially empty)
 Remaining sub-array which is unsorted(Initially the entire input array)
+
+
 Space complexity: O(1)
 Time complexity; Worst case: O(n^2)
             Average case: O(n^2)
@@ -44,6 +46,8 @@ Data structure: Array
                                                     
                                                     
 Is stable an in-place comparison sorting algorithm, which sorts an array by first dividing it into 2 seperate ‘sub-arrays’, where the first value of the array(since it doesn’t have items to its left), is considered sorted. We index up the array and compare the [n-1] and [n] indexed values and swap them if needed, if not proceed until the entire array is sorted.
+
+
 Space complexity: O(1)
 Time complexity; Worst case: O(n^2)
             Average case: O(n^2)
@@ -54,6 +58,8 @@ Data structure: Array
                                                      
                                                      
 Is a stable divide & conquer algorithm, which divides the unsorted array list into sublists each containing 1 element. The resulting adjacent pairs of elements are compared and merged recursively until the list is fully sorted.
+
+
 Space complexity: O(n)
 Time complexity; Worst case: O(nlog(n))
             Average case: O(nlog(n))
@@ -64,6 +70,8 @@ Data structure: Array
                                                      
                                                      
 Is a divide and conquer, recursive algorithm which involves choosing a pivot from the given elements in an array and partitioning the other elements into 2 sub-arrays, such that all values less than the pivot are placed to its left and those greater than it are placed to the right. The sub-arrays are then sorted recursively until the entire array of items is sorted.
+
+
 Space complexity: O(nlog(n))
 Time complexity; Worst case: O(n^2)
             Average case: O(nlog(n))
@@ -74,6 +82,8 @@ Data structure: Array
                                                     
                                                     
 Is an in-place comparison based sorting algorithm based on the Binary Heap data structure(specifically the max heap, where parent  node> child node). Heap sort is like selection sort, in that heap sort divides its input into a sorted and unsorted region, and it recursively shrinks the unsorted region by extracting the largest element from it and inserting into the sorted region. However unlike selection sort heap sort does not linearly scan the unsorted region, rather heap sort maintains the unsorted region in a max heap data structure to more quickly find the element in each step.
+
+
 Space complexity: O(1)
 Time complexity; Worst case: O(nlog(n))
             Average case: O(nlog(n))
@@ -88,7 +98,9 @@ Place the item in a sorted partition array.
                                                     7. Counting Sort
                                                     
 Is a stable algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The counts are stored in an auxiliary array and the sorting is done by mapping the counts as an index of the auxiliary array.
-Space complexity: O(n+k), where k is the
+
+
+Space complexity: O(n+k), where k is the number of possible values.
 Time complexity; Worst case: O(n+k)
             Average case: O(n+k)
 Data structure: Array List                                                    
@@ -98,6 +110,8 @@ Data structure: Array List
                                                    
                                                    
 Is an algorithm that sorts the elements by first grouping the individual digits of same place value **into a linked list**. It then sorts the elements according to their increasing or decreasing order. It is only used to sort numbers.
+
+
 Space complexity: O(n+2)^2
 Time complexity; Worst case: O(n * k/d)
             Average case: O(n * k/d)
@@ -109,6 +123,8 @@ Data structure: Array
                                                  
                                                  
 Is a comparison-sort based algorithm that sorts the elements into several groups called buckets. The elements inside each bucket are sorted using any of the other suitable sorting algorithms (mainly insertion sort, but it really depends on the average size of the buckets) recursively. Bucket sort is mainly used when input is uniformly distributed over a range.
+
+
 Space complexity: O(n*k), where k is the number of buckets
 Time complexity; Worst case: O(n^2)
             Average case: O(n + (n^2/k) + k ) , O(n) when k ≈ n
@@ -125,6 +141,8 @@ Sedgewick’s increments: 1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1.
 Hibbard’s increments: 1, 3, 7, 15, 31, 63, 127, 255, 511…
 Papernov & Stasevich increment: 1, 3, 5, 9, 17, 33, 65,...
 Pratt: 1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....
+
+
 Space complexity: O(n)
 Time complexity; Worst case: O(n^2)
             Average case: depends on the gap
