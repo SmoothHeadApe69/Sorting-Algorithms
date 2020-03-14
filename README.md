@@ -25,13 +25,9 @@ The bubble sort is a comparison-sort algorithm, which sorts items in an array by
 Space complexity: O(1)
 
 
-Time complexity; Worst case: O (n^2)
-
-
-            Average case: O(n^2)
-            
-            
-            Best case: O(n)
+Time complexity; Worst case: O (n^2) 
+                  Average case: O(n^2)
+                  Best case: O(n)
 Data structure: Array
 
                                                     2. Selection Sort:
