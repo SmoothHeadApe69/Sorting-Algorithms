@@ -1,4 +1,5 @@
 def CountingSort(arr):
+    
     n = len(arr)
     Output = [0] * n
     Count = [0] * 10
